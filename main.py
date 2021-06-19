@@ -29,7 +29,7 @@ def create_delivery_dates_list(**kwargs):
 
     ti = kwargs['ti']
 
-    current_weekday = int(datetime.now().weekday())
+    current_weekday = datetime.now().weekday()
     current_date = datetime.now()
 
     delivery_weekdays = [5, 6, 7]
